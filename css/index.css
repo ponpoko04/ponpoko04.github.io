@@ -1,0 +1,6 @@
+iframe
+{
+	border: none;
+	width: inherit;
+	/*min-height: 300px;*/
+}

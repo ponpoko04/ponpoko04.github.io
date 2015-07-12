@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<title>modal</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width"/>
+	<link rel="stylesheet" type="text/css" href="../css/modal.css"/>
+	<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../js/angular-1.4.2.min.js"></script>
+	<script type="text/javascript" src="../js/modal.controller.js"></script>
+</head>
+
+<body ng-app="modal">
+	<div ng-controller="listController">
+		<ul class="list">
+			<li ng-repeat="item in list">
+				<div style="float:left;">
+					<img ng-src="{{item.imageUrl}}"/>
+				</div>
+				<div style="float:right;">
+					<span ng-bind="item.id"></span>
+					<span ng-bind="item.name"></span>
+				</div>
+				<div style="clear:both;"></div>
+			</li>
+		</ul>
+	</div>
+</body>
+
+</html>
